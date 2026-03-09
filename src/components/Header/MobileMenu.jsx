@@ -1,11 +1,11 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Box, IconButton, Typography } from "@mui/material";
 
 import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo.svg";
 
 export default function MobileMenu({ open, onClose }) {
   const [screen, setScreen] = useState("main");
@@ -75,12 +75,7 @@ export default function MobileMenu({ open, onClose }) {
           to="/"
           sx={{ display: "flex", alignItems: "center" }}
         >
-          <Box
-            component="img"
-            src="/src/assets/logo.svg"
-            alt="Modulex"
-            sx={{ height: 30 }}
-          />
+          <Box component="img" src={logo} alt="Modulex" sx={{ height: 30 }} />
         </Box>
 
         <IconButton onClick={onClose} sx={{ p: 0 }}>
