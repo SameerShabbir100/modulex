@@ -5,7 +5,7 @@ import { Box, IconButton, Typography } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import logo from "../../assets/logo.svg";
+import logo from "./logo.svg";
 
 export default function MobileMenu({ open, onClose }) {
   const [screen, setScreen] = useState("main");
