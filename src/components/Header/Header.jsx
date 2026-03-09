@@ -23,6 +23,8 @@ import CloseIcon from "@mui/icons-material/Close";
 
 import MobileMenu from "./MobileMenu";
 import headerLogo from "../../assets/headerlogo.svg";
+import mobileLogo from "../../assets/logo.svg";
+
 export default function Header() {
   const location = useLocation();
   const isHome = location.pathname === "/";
@@ -156,7 +158,7 @@ export default function Header() {
           >
             <Box
               component="img"
-              src="/src/assets/logo.svg"
+              src={mobileLogo}
               alt="Modulex"
               sx={{ height: 30 }}
             />
