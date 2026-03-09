@@ -2,6 +2,8 @@ import { Box, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import CTAButton from "./common/CTAButton";
+import homepageBannerOne from "../assets/homepage-banner-1-scaled.avif";
+import homepageBannerTwo from "../assets/homepage-banner-3-scaled.avif";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -9,12 +11,12 @@ import "swiper/css/effect-fade";
 
 const initialSlides = [
   {
-    image: "/src/assets/homepage-banner-1-scaled.avif",
+    image: homepageBannerOne,
     title1: "A New Era of Construction",
     title2: "Begins with Modular 2.0",
   },
   {
-    image: "/src/assets/homepage-banner-3-scaled.avif",
+    image: homepageBannerTwo,
     title1: "Rethinking construction for a",
     title2: "changing world",
   },
