@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Box, Grid, IconButton, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
@@ -88,6 +88,12 @@ export default function HomePage() {
       text: "Retail Pods",
     },
   ];
+
+  const [isMobileCTA, setMobileCTA] = useState(true);
+  const handleMobileCTA = () => {
+    setMobileCTA(false);
+  };
+
   return (
     <>
       <Box sx={{ position: "relative", width: "100%" }}>
@@ -107,25 +113,26 @@ export default function HomePage() {
           modules arrive nearly complete, allowing you to earn revenue months
           sooner.
         </Box>
-
-        <Box
-          sx={{
-            position: "fixed",
-            right: 0,
-            bottom: "50%",
-            zIndex: 2,
-            rotate: "-90deg",
-            transform: "none",
-            transformOrigin: "100% 100%",
-            display: { xs: "flex", sm: "none" },
-            alignItems: "center",
-            columnGap: 1.5,
-          }}
-        >
-          <CTAButton to="/contact">
-            <CloseIcon />
-          </CTAButton>
-        </Box>
+        {isMobileCTA && (
+          <Box
+            sx={{
+              position: "fixed",
+              right: 0,
+              bottom: "50%",
+              zIndex: 2,
+              rotate: "-90deg",
+              transform: "none",
+              transformOrigin: "100% 100%",
+              display: { xs: "flex", sm: "none" },
+              alignItems: "center",
+              columnGap: 1.5,
+            }}
+          >
+            <CTAButton to="/contact" handleIconClick={handleMobileCTA}>
+              <CloseIcon />
+            </CTAButton>
+          </Box>
+        )}
       </Box>
 
       <Box

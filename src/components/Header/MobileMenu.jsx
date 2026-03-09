@@ -207,16 +207,6 @@ export default function MobileMenu({ open, onClose }) {
                       borderBottom: "1px solid #e5e5e5",
                     }}
                   >
-                    {/* <Typography
-                      sx={{
-                        textTransform: "uppercase",
-                        fontWeight: 600,
-                        fontSize: 18,
-                        color: item === "Overview" ? "#e3000f" : "#101010",
-                      }}
-                    >
-                      {item.title}
-                    </Typography> */}
                     <NavLink
                       to={item.link}
                       style={({ isActive }) => ({
