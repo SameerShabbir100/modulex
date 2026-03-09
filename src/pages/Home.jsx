@@ -207,37 +207,16 @@ export default function HomePage() {
               <Typography
                 variant="body2"
                 sx={{
-                  fontSize: 16,
+                  fontSize: { xs: 16, md: 20 },
                   fontWeight: 400,
-                  lineHeight: 1.7,
+                  lineHeight: { xs: 1.7, md: 1.5 },
                   color: "#101010",
-                  display: { xs: "block", sm: "none" },
                 }}
               >
                 We use 3D modular construction and Light Gauge Steel Frame
                 Technology. Each module is factory-built with structural
                 framing, integrated MEP, and pre-finished interiors, ensuring
                 minimal on-site disruption.
-              </Typography>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: { sm: 16, lg: 20 },
-                  fontWeight: 400,
-                  color: "#101010",
-                  mb: "5px",
-                  display: { xs: "none", sm: "block" },
-                }}
-              >
-                We use 3D modular construction and Light Gauge Steel Frame
-                <br />
-                Technology. Each module is factory-built with structural
-                framing,
-                <br />
-                integrated MEP, and pre-finished interiors, ensuring minimal
-                on-site
-                <br />
-                disruption.
               </Typography>
               <CTAButton label="Our Technology" sx={{ mt: 4 }} />
             </Grid>

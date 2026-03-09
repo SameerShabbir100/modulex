@@ -66,7 +66,7 @@ export default function Card({
           <Typography
             variant="h3"
             sx={{
-              fontSize: { xs: 36, sm: 48, xl: 88 },
+              fontSize: { xs: 36, sm: 48, md: 60, xl: 88 },
               color: "#101010",
               mb: 2,
             }}
@@ -76,7 +76,7 @@ export default function Card({
 
           <Typography
             variant="body2"
-            sx={{ fontSize: { xs: 14, lg: 20 }, color: "#101010" }}
+            sx={{ fontSize: { xs: 14, md: 20 }, color: "#101010" }}
           >
             {data.subtitle}
           </Typography>
