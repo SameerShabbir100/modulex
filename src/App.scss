@@ -1,0 +1,58 @@
+:root,
+:root .swiper {
+  --swiper-pagination-bullet-width: 48px;
+  --swiper-pagination-bullet-height: 1px;
+  --swiper-pagination-bullet-border-radius: 0;
+  --swiper-pagination-bullet-background: #ffffff;
+  --swiper-pagination-bullet-opacity: 1;
+
+  --swiper-pagination-color: #e3000f;
+  --swiper-pagination-bullet-inactive-color: #ffffff;
+  --swiper-pagination-bullet-inactive-opacity: 0.74;
+  --swiper-pagination-bottom: 45px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.storiesCarousel {
+  .swiper-pagination-progressbar {
+    position: static;
+    margin-top: 48px;
+    width: auto !important;
+    margin-left: 128px;
+    margin-right: 128px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .storiesCarousel {
+    .swiper-pagination-progressbar {
+      margin-left: 64px;
+      margin-right: 64px;
+    }
+  }
+}
+
+@media (max-width: 5250px) {
+  .storiesCarousel {
+    .swiper-pagination-progressbar {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .storiesCarousel {
+    .singleSlide {
+      width: 500px !important;
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .storiesCarousel {
+    .singleSlide {
+      width: 335px !important;
+    }
+  }
+}
