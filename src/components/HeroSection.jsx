@@ -84,7 +84,7 @@ export default function HeroSlider({
                 <Typography
                   sx={{
                     color: "#fff",
-                    fontSize: { xs: 36, sm: 48, md: 60, xl: 72 },
+                    fontSize: { xs: 36, sm: 48, md: 60, lg: 72 },
                     fontWeight: 500,
                     maxWidth: 1000,
                     lineHeight: { xs: 1.15, sm: 1 },
@@ -95,7 +95,7 @@ export default function HeroSlider({
                 <Typography
                   sx={{
                     color: "#fff",
-                    fontSize: { xs: 36, sm: 48, md: 60, xl: 72 },
+                    fontSize: { xs: 36, sm: 48, md: 60, lg: 72 },
                     fontWeight: 500,
                     maxWidth: 900,
                     lineHeight: { xs: 1.15, sm: 1 },
