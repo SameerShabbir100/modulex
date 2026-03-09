@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { footerLink, policyLink } from "./Footer.module.scss";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YoutubeIcon from "@mui/icons-material/Youtube";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import logo from "../../assets/headerlogo.svg";
 
 export default function Footer() {
@@ -293,7 +293,7 @@ export default function Footer() {
               </Typography>
               <Box>
                 <LinkedInIcon sx={{ color: "#848484", mr: 2 }} />
-                <YoutubeIcon sx={{ color: "#848484" }} />
+                <YouTubeIcon sx={{ color: "#848484" }} />
               </Box>
             </Box>
           </Grid>
