@@ -747,7 +747,7 @@ export default function HomePage() {
                 color="white"
                 sx={{
                   textTransform: "capitalize",
-                  fontSize: { xs: 36, sm: 48 },
+                  fontSize: { xs: 36, sm: 48, md: 60, xl: 72 },
                   fontWeight: 500,
                   mb: 4,
                   px: { xs: 3, sm: 0 },
