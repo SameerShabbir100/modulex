@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import {
   AppBar,
   Box,
@@ -13,15 +15,14 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-import { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
-
+import headerLogo from "../../assets/headerlogo.svg";
 export default function Header() {
   const location = useLocation();
   const isHome = location.pathname === "/";
@@ -140,7 +141,7 @@ export default function Header() {
           >
             <Box
               component="img"
-              src="/src/assets/headerlogo.svg"
+              src={headerLogo}
               alt="Modulex"
               sx={{ height: 30 }}
             />
