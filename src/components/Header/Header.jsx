@@ -24,6 +24,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import MobileMenu from "./MobileMenu";
 import headerLogo from "../../assets/headerlogo.svg";
 import mobileLogo from "../../assets/logo.svg";
+import HamburgerIcon from "./HamburgerIcon";
 
 export default function Header() {
   const location = useLocation();
@@ -86,6 +87,9 @@ export default function Header() {
 
   const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const hamburgerColor = scrolled || !isHome ? "#e3000f" : "#ffffff";
+
   return (
     <AppBar
       position="fixed"
@@ -160,7 +164,11 @@ export default function Header() {
               component="img"
               src={mobileLogo}
               alt="Modulex"
-              sx={{ height: 30 }}
+              sx={{
+                width: scrolled ? 35 : 30,
+                height: 30,
+                transition: "width 0.5s ease",
+              }}
             />
           </Box>
         )}
@@ -290,7 +298,8 @@ export default function Header() {
         {isMobile && (
           <>
             <IconButton sx={{ p: 0 }} onClick={() => setMobileMenuOpen(true)}>
-              <MenuIcon sx={{ fontSize: 34, color: "#e3000f" }} />
+              {/* <MenuIcon sx={{ fontSize: 34, color: "#ffffff" }} /> */}
+              <HamburgerIcon color={hamburgerColor} />
             </IconButton>
 
             <MobileMenu

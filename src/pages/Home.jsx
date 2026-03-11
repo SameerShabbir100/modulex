@@ -167,7 +167,7 @@ export default function HomePage() {
           sx={{
             px: { xs: 2, sm: 4, md: 6, lg: 8, xl: 16 },
             pt: { xs: 10, lg: 15 },
-            pb: 10,
+            pb: { xs: 7, sm: 10 },
             bgcolor: "#f4f4f4",
           }}
         >

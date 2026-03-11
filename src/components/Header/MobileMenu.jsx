@@ -95,7 +95,7 @@ export default function MobileMenu({ open, onClose }) {
           sx={{
             borderLeft: "1px solid #e5e5e5",
             borderRight: "1px solid #e5e5e5",
-            pt: 5,
+            pt: screen === "main" ? 5 : 0.5,
             pb: 4,
           }}
         >
@@ -106,9 +106,9 @@ export default function MobileMenu({ open, onClose }) {
                 { name: "About", link: "/about" },
                 { name: "Why Modular", link: "/why-module" },
                 { name: "Technology", link: "/technology" },
-              ].map((item) => (
+              ].map((item, index) => (
                 <Box
-                  key={item.name}
+                  key={index}
                   sx={{
                     px: 4,
                     py: 1.25,
@@ -185,7 +185,7 @@ export default function MobileMenu({ open, onClose }) {
             <Box>
               <Box
                 sx={{
-                  px: 2,
+                  pr: 1,
                   pb: 1,
                   textAlign: "right",
                   textDecoration: "underline",
@@ -214,7 +214,7 @@ export default function MobileMenu({ open, onClose }) {
                         textTransform: "uppercase",
                         fontWeight: 600,
                         fontSize: 18,
-                        color: isActive ? "#e3000f" : "#101010",
+                        color: isActive || index == 0 ? "#e3000f" : "#101010",
                       })}
                     >
                       {item.title}
@@ -227,7 +227,6 @@ export default function MobileMenu({ open, onClose }) {
                 sx={{
                   px: 4,
                   py: 1.25,
-                  // borderBottom: "1px solid #e5e5e5",
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
@@ -287,7 +286,9 @@ export default function MobileMenu({ open, onClose }) {
                 color: "#111",
               }}
             >
-              <Typography sx={{ fontSize: 18 }}>Contact</Typography>
+              <Typography sx={{ fontSize: 18, fontWeight: 500 }}>
+                Contact
+              </Typography>
 
               <Box
                 sx={{
