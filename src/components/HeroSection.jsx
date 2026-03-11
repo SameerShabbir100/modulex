@@ -30,7 +30,7 @@ export default function HeroSlider({
     <Box
       sx={{
         position: "relative",
-        height: { xs: "100vh" },
+        height: "100vh",
       }}
     >
       <Swiper
